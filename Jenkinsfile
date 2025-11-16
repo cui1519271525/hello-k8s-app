@@ -35,7 +35,7 @@ pipeline {
                     )]) {
                         sh """
                         # 登录 Harbor（忽略自签名证书警告）
-                        docker login -u ${HARBOR_USER} -p ${HARBOR_PASS} ${REGISTRY} --insecure-registry
+                        docker login -u ${HARBOR_USER} -p ${HARBOR_PASS} ${REGISTRY}
                         
                         # 构建镜像
                         docker build -t ${REGISTRY}/${PROJECT}/${APP_NAME}:BUILD-${BUILD_NUMBER} .
