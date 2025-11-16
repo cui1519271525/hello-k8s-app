@@ -1,4 +1,3 @@
-```dockerfile
 # 使用官方Python轻量级基础镜像
 FROM python:3.9-slim
 
@@ -17,4 +16,4 @@ EXPOSE 5000
 
 # 定义容器启动命令
 CMD ["python", "app.py"]
-```
+
