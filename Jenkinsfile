@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY = "registry.k8s.io"       // Harbor 地址
+        REGISTRY = "192.168.10.42:8443"       // Harbor 地址
         PROJECT = "jenkins"
         APP_NAME = "hello-k8s-app"
         HARBOR_CREDENTIALS = credentials('12345678')  // Harbor 用户名密码
